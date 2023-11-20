@@ -10,7 +10,7 @@ const HomePage = () => {
       <div className="flex flex-col xxs:pt-10 items-center font-Spartan text-orange h-[calc(100%-184px)] relative">
         <div className="flex flex-col items-center absolute z-10">
           <p className="font-semibold text-[34px] outlined-text single-line-animation">
-            <span class="animated-text">
+            <span className="animated-text">
               Welcome! Bienvenida! Willkommen! 欢迎 Benvenuto! ようこそ
             </span>
           </p>
