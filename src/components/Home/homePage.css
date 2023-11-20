@@ -1,0 +1,37 @@
+.gradient-button {
+  background: rgb(240, 166, 54);
+  background: linear-gradient(
+    328deg,
+    rgba(240, 166, 54, 1) 25%,
+    rgba(214, 42, 42, 1) 76%
+  );
+}
+
+.button-shadow {
+  box-shadow: 0px 10px 30px -10px rgba(214, 42, 42, 0.8);
+}
+
+.outlined-text {
+  -webkit-text-stroke: 1px #ffc289;
+  color: transparent;
+}
+
+.single-line-animation {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.animated-text {
+  display: inline-block;
+  animation: moveLeftToRight 20s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
