@@ -24,7 +24,7 @@
 
 .animated-text {
   display: inline-block;
-  animation: moveLeftToRight 20s linear infinite;
+  animation: moveLeftToRight 30s linear infinite;
 }
 
 @keyframes moveLeftToRight {

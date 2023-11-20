@@ -14,9 +14,13 @@ const Navbar = () => {
 
   return (
     <nav className="relative">
-      <div className="flex items-center xxs:justify-between md:gap-10 font-Spartan text-orange pt-4 pb-2 text-[20px] xxs:px-4 h-[84px]">
-        <img className="xxs:w-[150px] w-[200px]" src={logo} alt="" />
-        <div>
+      <div className="flex items-center xxs:justify-between md:gap-10 font-Spartan text-orange pt-4 pb-2 text-[20px] xxs:px-4 lg:px-10 h-[84px]">
+        <img
+          className="xxs:w-[150px] lg:w-[200px] w-[200px]"
+          src={logo}
+          alt=""
+        />
+        <div className=" lg:hidden">
           <GiHamburgerMenu
             className="cursor-pointer"
             onClick={toggleMenu}
@@ -28,7 +32,7 @@ const Navbar = () => {
             showMenu ? "active" : ""
           }`}
         >
-          <ul className="flex flex-col text-end">
+          <ul className="flex flex-col text-end cursor-pointer">
             <li>Home</li>
             <li>Menu</li>
             <li>Reservations</li>
@@ -43,15 +47,15 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div className="xxs:hidden md:block">
-          <ul className="flex gap-10">
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Reservations</li>
-            <li>Promotions</li>
+        <div className="xxs:hidden lg:block">
+          <ul className="flex gap-10 ">
+            <li className="cursor-pointer">Home</li>
+            <li className="cursor-pointer">Menu</li>
+            <li className="cursor-pointer">Reservations</li>
+            <li className="cursor-pointer">Promotions</li>
           </ul>
         </div>
-        <div className="xxs:hidden md:block">
+        <div className="xxs:hidden lg:block">
           <div className="flex gap-4">
             <button className="px-6 py-1 bg-darkgray rounded-lg text-orange border-orange border">
               Login

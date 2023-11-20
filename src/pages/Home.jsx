@@ -9,7 +9,7 @@ const Home = () => {
       <div className="bg-darkgray h-screen w-screen relative overflow-hidden">
         <Navbar />
         <HomePage />
-        <NavBot />
+        <NavBot className="lg:hidden" />
       </div>
     </>
   );
